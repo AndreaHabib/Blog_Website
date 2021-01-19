@@ -2,11 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path')
+const dotenv = require('dotenv')
 
 const items = require ('./routes/api/items')
 const comments = require ('./routes/api/comments')
 
-
+dotenv.config();
 
 const app = express();
 
