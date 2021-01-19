@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path')
 
 const items = require ('./routes/api/items')
+const comments = require ('./routes/api/comments')
 
 
 
@@ -20,14 +21,15 @@ const db = require('./config/keys').mongoURI
 mongoose
 .connect(db,{ useNewUrlParser: true , useUnifiedTopology: true})
     .then(()=> {
-        console.log("MongoDB connectedd")
+        console.log("MongoDB connected")
         
     }).catch(err => console.log(err))
 
 
 
 // Use routes
-app.use('/api/items', items)    
+app.use('/api/items', items)
+app.use('/api/comments', comments)    
 
 //serve static assets if in production
 if(process.env.NODE_ENV === 'production'){
