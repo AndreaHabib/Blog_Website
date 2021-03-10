@@ -90,7 +90,7 @@ class ItemModal extends Component {
                   onChange={this.onChangeSubtitle}
                 ></Input>
                 <Input
-                  type="text"
+                  type="textarea"
                   name="body"
                   id="item"
                   placeholder="Add body.."

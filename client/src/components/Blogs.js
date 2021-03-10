@@ -11,6 +11,7 @@ import {
   CardBody,
 } from "reactstrap";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { getItems, deleteItem } from "../actions/itemActions";
 import PropTypes from "prop-types";
@@ -38,12 +39,13 @@ class Blogs extends Component {
             src="https://res.cloudinary.com/andreahabib/image/upload/v1615342310/AndreaBlog/BLOGS_5_wrk1hd.png"
           />
         </div>
+        {/* ({ _id, name, subtitle, imageURL, body, date } */}
         <Container>
           <ListGroup>
             <TransitionGroup className="row blogs">
-              {items.map(({ _id, name, subtitle, imageURL, body, date }) => (
+              {items.map((item) => (
                 <CSSTransition
-                  key={_id}
+                  key={item._id}
                   timeout={500}
                   classNames="col-12 col-md-6 fade"
                 >
@@ -52,16 +54,23 @@ class Blogs extends Component {
                       <CardImg
                         top
                         className="imageBlog"
-                        src={imageURL}
+                        src={item.imageURL}
                         alt="Card image cap"
                       />
                       <CardBody className="body">
-                        <CardTitle tag="h5">{name}</CardTitle>
+                        <CardTitle tag="h5">{item.name}</CardTitle>
                         <CardSubtitle tag="h6" className="mb-2 text-muted">
-                          {subtitle}
+                          {item.subtitle}
                         </CardSubtitle>
-                        <CardText className="cardText">{body}</CardText>
-                        <Button className="button">Read More</Button>
+                        <CardText className="cardText">{item.body}</CardText>
+                        <Link
+                          to={{
+                            pathname: `ReadMore/${item._id}`,
+                            state: { items: item },
+                          }}
+                        >
+                          <Button className="button">Read More</Button>
+                        </Link>
                       </CardBody>
                     </Card>
                   </div>

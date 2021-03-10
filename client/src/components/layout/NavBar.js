@@ -6,7 +6,7 @@ class NavBar extends Component {
     return (
       <nav className="navbar">
         <p className="brand">
-          Andrea <i class="fas fa-blog">log </i>
+          Andrea <i className="fas fa-blog">log </i>
         </p>
       </nav>
     );
