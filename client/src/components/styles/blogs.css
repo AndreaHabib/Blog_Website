@@ -1,0 +1,78 @@
+.group {
+  width: 50%;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.illustration {
+  border-radius: 60px;
+  width: 50vw;
+  height: 50vh;
+  margin: 10px auto;
+  object-fit: cover;
+}
+
+.cardeck {
+  border-radius: 2rem;
+  border: 0;
+  box-shadow: 3px 2px 10px black;
+}
+.blogs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+
+.imageBlog {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  height: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cardText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.button {
+  background-color: rgb(18, 17, 90) !important;
+}
+
+@media (max-width: 600px) {
+  .imageBlog {
+    width: 100%;
+  }
+  .group {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .illustration {
+    width: 100%;
+  }
+  .blogs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 768px) {
+  .imageBlog {
+    width: 100%;
+  }
+  .group {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .illustration {
+    width: 100%;
+  }
+  .blogs {
+    display: flex;
+  }
+}

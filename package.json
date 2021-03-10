@@ -1,7 +1,7 @@
 {
-  "name": "mern-to-do",
+  "name": "AndreaBlog",
   "version": "1.0.0",
-  "description": "Shopping list built with MERN stack",
+  "description": "A website for my blogs",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODCUTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "author": "Abdel Elsayed",
+  "author": "Andrea Habib",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -18,6 +18,11 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.12",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "particles-bg": "^2.5.0",
+    "react-bootstrap": "^1.5.1"
+  },
+  "resolutions": {
+    "react": "17.0.1"
   }
 }

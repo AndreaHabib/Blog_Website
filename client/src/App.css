@@ -1,26 +1,18 @@
-.remove-btn {
-  margin-right: 0.5rem;
-  float: right;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.add-btn {
-  margin-bottom: 0.5rem;
-}
-
-.fade-enter {
-  opacity: 0.01;
-}
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 1000ms ease-in;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit-active {
-  opacity: 0.01;
-  transition: opacity 1000ms ease-in;
+body {
+  background: #536976; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #292e49,
+    #536976
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #292e49,
+    #5f6283
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
