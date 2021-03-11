@@ -36,7 +36,7 @@ class Blogs extends Component {
           <img
             alt="illustration"
             className="illustration"
-            src="https://res.cloudinary.com/andreahabib/image/upload/v1615342310/AndreaBlog/BLOGS_5_wrk1hd.png"
+            src="https://res.cloudinary.com/andreahabib/image/upload/v1615418961/AndreaBlog/BLOGS_6_rdmoik.png"
           />
         </div>
         {/* ({ _id, name, subtitle, imageURL, body, date } */}

@@ -8,6 +8,11 @@ body {
   margin: 0 !important;
 }
 
+.main_body {
+  padding: 100px;
+  border: 2px solid grey;
+}
+
 .body11 {
   margin-top: 5rem;
   font-size: 1.5rem;
@@ -55,6 +60,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .main_body {
+    padding: 0;
+  }
   .main_image {
     width: 55vw;
   }
@@ -74,6 +82,11 @@ body {
 }
 
 @media (max-width: 768px) and (min-width: 768px) {
+  .main_body {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding: 0;
+  }
   .main_image {
     width: 55vw;
   }
@@ -83,6 +96,14 @@ body {
 }
 
 @media (max-width: 1024px) and (min-width: 1024px) {
+  .main_body {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding: 0;
+  }
+  .main_image {
+    width: 55vw;
+  }
   .image {
     width: 50vw;
   }
