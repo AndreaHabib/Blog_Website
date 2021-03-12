@@ -21,7 +21,6 @@ export default class App extends Component {
             <Switch>
               <NavBar />
               <Route exact path="/Blogs">
-//                 <ItemModal />
                 <Blogs />
               </Route>
               <Route exact path="/ReadMore/:id">
